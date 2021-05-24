@@ -119,9 +119,9 @@ class Form extends React.Component {
   render() {
     return (
       <div className="App min-vh-100 min-vw-100 d-flex align-items-center justify-content-center bg-secondary bg-gradient text-white">
-        <div className="container">
+        <div className="container h-100 pb-4">
           <div className="row">
-            <div className="col-12 mb-3">
+            <div className="col-12 my-3">
               <h1 className="fs-1">{this.state.month} {this.state.year} Chargeable Hours Goal</h1>
             </div>
           </div>
@@ -161,6 +161,9 @@ class Form extends React.Component {
               </div>
             </div>
           </div>
+          <footer className="px-0 text-center text-dark">
+            <small id="copyright" className="text-white p-2">&copy; Copyright 2021, Nicholas Eveland</small>
+          </footer> 
         </div>
       </div>
     );
